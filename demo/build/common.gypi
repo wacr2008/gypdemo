@@ -111,7 +111,7 @@
                     'IntermediateDirectory': '$(OutDir)\\obj\\$(ProjectName)',
                     'CharacterSet': '0',    # ASCII
                 }, 
-		            
+		            'msbuild_toolset':'v120_xp',
                 'msvs_settings':
                 { 
 								    'VCCLCompilerTool': {
