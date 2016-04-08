@@ -1,0 +1,5 @@
+LIBRARY libCommon
+EXPORTS
+    ExportFunction              @1 
+    ; Extensions
+    Ext_ExportFunction          @2 

@@ -1,0 +1,22 @@
+#ifndef COMMON_VERSION_H_
+#define COMMON_VERSION_H_
+
+#include "id/commit.h"
+
+#define APP_MAJOR_VERSION 2
+#define APP_MINOR_VERSION 1
+
+#ifndef APP_REVISION
+#define APP_REVISION 0
+#endif
+
+#define APP_STRINGIFY(x)       #x
+#define APP_MACRO_STRINGIFY(x) APP_STRINGIFY(x)
+
+#define APP_VERSION_STRING                       \
+    APP_MACRO_STRINGIFY(APP_MAJOR_VERSION) "." \
+    APP_MACRO_STRINGIFY(APP_MINOR_VERSION) "." \
+    APP_MACRO_STRINGIFY(APP_REVISION) "." \
+    APP_COMMIT_HASH
+
+#endif // COMMON_VERSION_H_
